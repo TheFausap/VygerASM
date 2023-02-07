@@ -9,6 +9,8 @@ This version of C is really close to machine level. For example, No fancy stuff 
 ## Memory and CPU
 
 ````{verbatim}
+#define MEMSIZE	0x800 /* 512W of RAM */
+
 /* instruction format (generic) */ 
 /* (r<<8)|(ind<<7)|(reg<<4)|op  */
 
