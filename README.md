@@ -1,5 +1,5 @@
 # VygerASM
-a VM written using OTCC
+a VM (and assembler) written using OTCC
 
 This is a very special C language. Based on K&R syntax, using the Obfuscated Tiny C Compiler, created by F. Bellard (https://bellard.org/otcc/).
 The compiler itself is a joy and merciless... each syntax error is a "segmentation fault" :)
