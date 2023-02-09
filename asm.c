@@ -143,6 +143,7 @@ emit(op,ffi)
 		/* I/O instruction use a different format */
 	} else if ((op == HL) || (op == PU) || (op == PO)) {
 		*(int*)PC = op;
+		printf("%x@%x\n",*(int*)PC,PC);
 		PC=PC+4;
 	}	
 }
@@ -165,6 +166,7 @@ push(v)
  	lS = S + sp;
 	*(int*)lS = v;
 	sp = sp - 4;
+	printf("PSH: %X,%X\n",lS,v);
 	if (sp < TOS) {
 		printf("S!U\n");
 		exit(15);
